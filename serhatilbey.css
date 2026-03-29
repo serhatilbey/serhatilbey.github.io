@@ -8,20 +8,20 @@ body {
 }
 
 header {
-  background-color: darkred;
-  color: #fff;
-  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 0.5rem;
   text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2em;
+  margin-top: 10;
+  font-size: 24px;
 }
 
 nav {
-  background: #0055a5;
-  padding: 0.5rem 0;
+  background: #000000;
+  padding: 0.2rem 0;
   text-align: center;
 }
 
@@ -43,11 +43,13 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 main {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 950px;
+  min-width: 700px;
   margin: auto;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -58,17 +60,13 @@ section {
 }
 
 h2 {
-  color: #003366;
-  border-bottom: 2px solid #0055a5;
+  color: #000000;
+  border-bottom: 2px solid #000000;
   padding-bottom: 0.3rem;
 }
 
 section h3 {
   color: darkred;
-}
-
-h4 {
-  margin-left: 10px;
 }
 
 footer {
@@ -93,4 +91,11 @@ footer {
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+#research ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 120px;
+  row-gap: 3px;
 }
