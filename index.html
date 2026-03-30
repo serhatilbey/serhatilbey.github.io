@@ -159,8 +159,26 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:serhatilbey@gmail.com">serhatilbey@gmail.com</a></p>
     </section>
-  </main>
 
+      <button id="goTopBtn" title="Go to top">↑ Top</button>
+  </main>
 </body>
+
+<script>
+  const goTopBtn = document.getElementById("goTopBtn");
+
+  // Show button when scrolling down 100px
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      goTopBtn.style.display = "block";
+    } else {
+      goTopBtn.style.display = "none";
+    }
+  };
+
+  goTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 
 </html>
